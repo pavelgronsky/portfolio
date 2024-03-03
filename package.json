@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "build": "lerna run build --stream",
+    "lint": "lerna run lint --no-bail --stream",
+    "lint:ci": "lerna run lint:ci --no-bail --stream",
+    "lint:fix": "lerna run lint:fix --stream",
+    "typecheck": "lerna run typecheck --no-bail --stream",
+    "test": "lerna run test --stream --no-bail --load-env-files=false --concurrency=1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "lerna": "^8.1.2"
+  }
+}
