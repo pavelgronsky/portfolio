@@ -1,3 +1,4 @@
+import path from "path"
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
@@ -12,6 +13,11 @@ export const config = {
     },
     optimizeDeps: {
     },
+    //resolve: {
+    //    alias: {
+    //        "@": path.resolve(__dirname, "./src"),
+    //    },
+    //},
     server: {
         open: true,
         port: 3000,
@@ -30,5 +36,4 @@ export const config = {
     },
 }
 
-// https://vitejs.dev/config/
 export default defineConfig(config)

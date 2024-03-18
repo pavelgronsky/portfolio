@@ -1,11 +1,20 @@
 import React from 'react'
+import TopBar from 'pages/TopBar'
+import SideBar from 'pages/SideBar'
+import {ModernizedRouting} from 'router/ModernizedRouting'
 
-const App = () => (
-    <div className="App">
-        <div className='w-full h-screen text-4xl text-blue-700 flex items-center justify-center'>
-            <h1 className='text-6xl text-red-500'>Test</h1>
+
+const App = () => {
+    return (
+        <div className="flex">
+            {/*<SideBar />
+            <main>
+                <TopBar />
+
+            </main>*/}
+            <ModernizedRouting />
         </div>
-    </div>
-)
+    )
+}
 
 export default App
